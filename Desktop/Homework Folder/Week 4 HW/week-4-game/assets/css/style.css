@@ -1,0 +1,41 @@
+
+
+.textDiv {
+
+    background-color: lightblue;
+    width: 300px;
+    border: 10px black;
+    padding: 20px;
+    margin: 20px;
+    word-wrap: break-word;
+
+}
+
+.btn1 {
+
+	function myFunction() {
+    document.getElementById("btn1").innerHTML = Math.floor((Math.random() * 12) + 1);
+
+}
+
+.btn2 {
+
+	function myFunction() {
+    document.getElementById("btn2").innerHTML = Math.floor((Math.random() * 12) + 1);
+
+}
+
+.btn3 {
+
+	function myFunction() {
+    document.getElementById("btn3").innerHTML = Math.floor((Math.random() * 12) + 1);
+
+}
+
+.btn4 {
+
+	function myFunction() {
+    document.getElementById("btn4").innerHTML = Math.floor((Math.random() * 12) + 1);
+
+}
+

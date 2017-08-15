@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+       <title><h1>Crystals Collector!
+       </h1>
+       </title>
+       
+ 
+	<script src='http://code.jquery.com/jquery.min.js'>
+
+<!-- This is where I attempted to make each button press add to the running total box-->
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        ("ul").append(val = btn1);
+    });
+
+$(document).ready(function(){
+    $("#btn2").click(function(){""
+        ("ul").append(val = btn2);
+    });
+
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        ("ul").append(val = btn3);
+    });
+
+$(document).ready(function(){
+    $("#btn4").click(function(){
+        ("ul").append(val = btn4);
+    });
+
+})
+
+ $('#configreset').click(function(){
+        $('#configform')[0].reset();
+  });
+
+</script>
+
+</head>
+
+<body>
+
+<div>
+<br>
+<p>You will be given a random number at the start of the game.
+<br>
+	There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
+<br>
+	You win the game by matching total score to randopm number, you lose the game if your score goes above random number.
+<br>
+	The value of each crystal is hidden from you until you click on it.
+<br>
+	Each time when the game starts, the game will change the value of each crystal.
+<br>
+</p>
+</div>
+
+<!--The player will be shown a random number at the start of the game.-->
+<!--The random number shown at the start of the game should be between 19 - 120.-->
+<div>
+Math.floor((Math.random() * 120) + 19);
+</div>
+
+<!--The player wins if their total score matches the random number from the beginning of the game.-->
+<!--The player loses if their score goes above the random number.-->
+
+<!-- I STILL need to create a way to total wins and losses-->
+<div>
+</div>
+
+<!--There will be four crystals displayed as buttons on the page.-->
+<!--When the player clicks on a crystal, it will add a specific amount of points to the player's total score. -->
+<!--Each crystal should have a random hidden value between 1 - 12.-->
+
+<div.textDiv>
+
+<button id="btn1"><img src="/assets/images/Jewel1.png" width="128" height="128"></button>
+<button id="btn2"><img src="/assets/images/Jewel2.png" width="128" height="128"></button>
+<button id="btn3"><img src="/assets/images/Jewel3.png" width="128" height="128"></button>
+<button id="btn4"><img src="/assets/images/Jewel4.png" width="128" height="128"></button>
+
+</div>
+
+<!--When they do click one, update the player's score counter.-->
+
+<div.textDiv><h3> Your Total Score Is: </h3></div>
+
+<div.textDiv><h4><ul>
+        0
+    </ul>
+    </h4>
+
+</div>
+
+<div>
+
+</div>
+
+
+<!--The game restarts whenever the player wins or loses.-->
+
+<!--When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.-->
+
+<input type="reset" id="configreset" value="Reset">
+
+
+<!--The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.-->
+
+
+</body>
+</html>
+
